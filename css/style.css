@@ -1,0 +1,153 @@
+/* || RESET */
+
+/* Box sizing rules, remove default margin */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove list styles on ul */
+ul {
+    list-style: none;
+}
+
+/* Set core body defalts */
+body {
+    min-height: 100vh;
+    line-height: 1.7;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4, button, input, label {
+    line-height: 1.1;
+}
+
+/* Make images easier to work with */
+img, 
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* || VARIABLES */
+
+:root {
+
+    /* COLORS */
+
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    /* FONT */
+
+    --fs: 0.9375rem;
+
+    --fw-semi-bold: 600;
+    --fw-regular: 400;
+    --fw-extra-light: 200;
+
+    /* BORDER */
+
+    --border-top: 4px;
+}
+
+/* GENERAL STYLES */
+
+body {
+    display: grid;
+    place-content: center;
+    font-family: "Poppins", sans-serif;
+    color: var(--grayish-blue);
+    background-color: var(--very-light-gray);
+
+    padding: 1.65rem;
+}
+
+p {
+    font-size: var(--fs);
+}
+
+h2 {
+    color: var(--very-dark-blue);
+    font-weight: var(--fw-semi-bold);
+}
+
+/* BLOCKS */
+
+.attribution { 
+    color: var(--very-dark-blue);
+    font-size: 11px; text-align: center; 
+    margin-top: 1rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.text-container {
+    text-align: center;
+}
+
+.cards-container {
+    margin-top: 3rem;
+    display: grid;
+    row-gap: 2rem;
+}
+
+.cards {
+    background-color: white;
+    padding: 1.75rem;
+    border-radius: 0.35rem;
+    text-align: left;
+    box-shadow: var(--very-dark-blue) 0px 13px 27px -5px,var(--very-dark-blue) 0px 8px 16px -8px;;
+}
+
+.cards p {
+    margin-top: 0.5rem;
+}
+
+/* ELEMENTS */
+
+.text-container__ribbon-text {
+    font-weight: var(--fw-extra-light);
+}
+
+.text-container__title {
+    margin-top: 0.5rem;
+}
+
+.text-container__intro {
+    margin-top: 1rem;
+}
+
+.cards-container__card-one {
+    border-top: var(--border-top) solid var(--cyan);
+}
+
+.cards-container__card-two {
+    border-top: var(--border-top) solid var(--red);
+}
+
+.cards-container__card-three {
+    border-top: var(--border-top) solid var(--orange);
+}
+
+.cards-container__card-four {
+    border-top: var(--border-top) solid var(--blue);
+}
