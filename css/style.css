@@ -175,10 +175,6 @@ li img {
 
 @media screen and (min-width: 64rem) {
 
-    main {
-        max-width: 64rem;
-    }
-
     .text-container {
         margin: auto;
         max-width: 33rem;
@@ -219,5 +215,12 @@ li img {
         grid-row-start: 3;
         grid-row-end: 5; */
         grid-area: 3/ 2/ span 2/ span 1;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    .cards {
+        max-width: 21rem;
+        padding: 1.125rem;
     }
 }
