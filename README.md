@@ -12,10 +12,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/kwokkw/four-card-feature-section-master)
+- Live Site URL: [Github live site](https://kwokkw.github.io/four-card-feature-section-master/)
 
 ## My process
 
@@ -45,17 +42,47 @@ Users should be able to:
 
 ### What I learned
 
-### Continued development
+```css
 
-### Useful resources
+.cards-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+.cards-container__card-cyan {
+        /* grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4; */
+        grid-area: 2/ 1/ span 2/ span 1;
+    }
+
+.cards-container__card-red {
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-area: 1/ 2/ span 2/ span 1;
+}
+
+.cards-container__card-blue {
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-area: 2/ 3/ span 2/ span 1;
+}
+
+.cards-container__card-orange {
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5; */
+    grid-area: 3/ 2/ span 2/ span 1;
+}
+
+```
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
+- Frontend Mentor - [@kwokkw](https://www.frontendmentor.io/profile/kwokkw)
